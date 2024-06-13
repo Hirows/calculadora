@@ -1,0 +1,127 @@
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+
+
+
+
+/* Calculadora geral */
+.calc{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows:  5rem minmax(3rem, auto) repeat(10, 2.5rem);
+  gap:3px;
+  background-color: #575757;
+  min-height: 100vh;
+}
+
+
+.calc .tecla{
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  color: #575757;
+  background-color: #e5e5e5;
+  border-radius: 9%;
+}
+
+.calc .tecla:hover{
+  background-color: #979797;
+}
+
+.calc .tecla:active{
+  background-color: #575757;
+  color: #e5e5e5;
+}
+
+.calc .resultado{
+  grid-column: 1/-1;
+  background-color: #c5c5c5;
+  padding : 15px;
+  border-radius: 5px;
+  justify-content: end;
+
+}
+
+.conta{
+  background-color: #c5c5c5;
+  font-size: 1.3rem;
+  text-align: right;
+  margin-top: 0.9rem;
+  padding-top: 1rem;
+  
+}
+
+/* Botão de igual */
+#result{
+  background-color: rgb(0, 255, 98);
+}
+
+#result:hover{
+  background-color: rgb(1, 179, 81);
+}
+
+#result:active{
+  background-color: rgb(0, 160, 40);
+  color: #e5e5e5;
+}
+
+
+/* Botão de apagar */
+.apagado{
+  background-color: rgb(255, 110, 110);
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 9%;
+  color: #575757;
+}
+
+.apagado:hover{
+  background-color: rgb(180, 78, 78);
+
+}
+
+.apagado:active{
+  background-color: rgb(211, 91, 91);
+  color: #e5e5e5;
+}
+
+/* Botão "Mode" */
+
+.mode{
+  background-color: rgb(255, 253, 110);
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 9%;
+  color: #575757;
+}
+
+.mode:hover{
+  background-color: rgb(180, 173, 78);
+
+}
+
+.mode:active{
+  background-color: rgb(211, 199, 91);
+  color: #b3b3b3;
+}
+
+.title{
+  grid-column: 1/-1;
+  text-align: center;
+  background-color: #575757;
+  color: #e5e5e5;
+}

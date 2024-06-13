@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+
+  <div class="calc">
+    <h1 class="title" id="titulo" onmouseleave="backtxt()" onmouseover="changetxt()">Calculadora</h1>
+    <div class="resultado">
+      <div id="conta" class="conta">
+      </div>
+    </div>
+
+    <button class="tecla" onclick="seno()">sin</button>
+    <button class="tecla" onclick="negseno()">sin-1</button>
+    <button class="tecla" onclick="cos()">cos</button>
+    <button class="tecla" onclick="negcos()">cos-1</button>
+    <button class="tecla" onclick="tan()">tan</button>
+    <button class="tecla" onclick="negtan()">tan-1</button>
+    <button class="tecla" onclick="In()">In</button>
+    <button class="tecla" onclick="log()">Log</button>
+    <button class="tecla" onclick="insert('**')">^</button>
+    <button class="tecla" onclick="insert('**(')">xy</button>
+    <button class="tecla" onclick="raiz()">√</button>
+    <button class="tecla" onclick="ex()">ex</button>
+    <button class="tecla" onclick="insert('-')">neg</button>
+    <button class="tecla" onclick="insert('(')">(</button>
+    <button class="tecla" onclick="insert(')')">)</button>
+    <button class="tecla" onclick="pi()">π</button>
+    <button class="mode" onclick="insert()">Mode</button>
+    <button class="tecla" onclick="percent()">%</button>
+    <button class="tecla" id="clearall" onclick="clearAll('')">C</button>
+    <button class="apagado" id="backspace" onclick="backspace()">⌫</button>
+    <button class="tecla" onclick="insert('7')" value="7">7</button>
+    <button class="tecla" onclick="insert('8')" value="8">8</button>
+    <button class="tecla" onclick="insert('9')" value="9">9</button>
+    <button class="tecla" onclick="insert('/')">/</button>
+    <button class="tecla" onclick="insert('4')" value="4">4</button>
+    <button class="tecla" onclick="insert('5')" value="5">5</button>
+    <button class="tecla" onclick="insert('6')" value="6">6</button>
+    <button class="tecla" onclick="insert('*')">*</button>
+    <button class="tecla" onclick="insert('1')" value="1">1</button>
+    <button class="tecla" onclick="insert('2')" value="2">2</button>
+    <button class="tecla" onclick="insert('3')" value="3">3</button>
+    <button class="tecla" onclick="insert('-')">-</button>
+    <button class="tecla" onclick="insert('+')">+</button>
+
+    <button class="tecla" onclick="insert('0')" value="0">0</button>
+    <button class="tecla" onclick="insert('.')">.</button>
+    <button class="tecla" id="result" class="igual" onclick="calcular()">=</button>
+
+  </div>
+  <script src="/JS/script.js"></script>
+</body>
+
+</html>
